@@ -95,12 +95,12 @@
     },
     computed: {
       // a computed getter
-      reversednewTask: function () {
-        // `this` points to the vm instance
-        return this.newTask.split('').reverse().join('')
-      },
       filteredTasks() {
         return filters[this.filter](this.tasks)
+      },
+      pendingTasks() {
+//        filters['all'].length
+//        filters.all(this.tasks).length
       }
     },
     methods: {
