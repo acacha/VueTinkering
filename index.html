@@ -10,6 +10,19 @@
 </head>
 <body>
 
+<style>
+    li.completed {
+        text-decoration : line-through;
+    }
+
+    [v-cloak] { display: none; }
+
+    li.active {
+        background-color: blue;
+    }
+</style>
+
+
 <div id="root">
     <!--VISTA-->
     <input type="text" id="message" v-model="message">
